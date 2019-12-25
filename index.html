@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Title-Icon-->
+  <link rel="icon" type="image/png" href="">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--MyCSS-->
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title> Toe Pwar - Hotel </title>
+</head>
+
+<body>
+  <nav class="">
+    <ul>
+      <li><img src="assets/pics/Toe Pwar Logo.png" class="logo myShadow"></li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#">ROOMS</a></li>
+      <li><a href="#checkAva">BOOKING</a></li>
+      <li><a href="#">CONTACT PAGE</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li>
+        <a href="#"><i class="fa fa-facebook-square" style="font-size:35px; color:darkblue;"></i></a>
+        <a href="#"><i class="fa fa-youtube-square" style="font-size:35px;color:red"></i></a>
+        <a href="#"><i class="fa fa-wechat" style="font-size:35px;color:green"></i></a>
+        <a href="#"><i class="fa fa-tumblr-square" style="font-size:35px;color:rgb(71, 180, 216)"></i></a>
+      </li>
+      <li>
+        <a href="#checkAva" class="bookNow">BOOK NOW</a>
+        <a href="#checkAva" class="bookNow ext">></a>
+      </li>
+    </ul>
+  </nav>
+  <section class="mainSec" id="home">
+    <!--section-1 Parallax1 start-->
+    <section class="sec1 parallax1">
+      <div class="emptyDiv myCenter">
+        <div class="myCenter">
+          <!--div>
+            <p class="myFont myWhiteText"> The best hotel in town.</p>
+          </div-->
+          <div>
+            <p class="myHeader myShadow">Toe Pwar Hotel</p>
+          </div>
+          <div>
+            <p class="mySingleLine myWhiteText">
+          </div>
+        </div>
+      </div>
+
+      <!--section-2 Check availability start-->
+      <section id="checkAva" class="myCenter">
+        <div class="checkAvaHeader">
+          <p class="myFont myWhiteText myShadow">Check Availability</p>
+        </div>
+        <div class="sm-font">
+          <form>
+            <label for="checkIn">
+              <h5> Check In </h5>
+              <input type="date" id="arrivalDate" class="arrivalDate">
+            </label>
+            
+            <label for="checkOut">
+              <h5> Check Out </h5>
+              <input type="date" id="departureDate" class="departureDate">
+            </label>
+            
+            <label for="adult">
+              <h5> Adult </h5>
+              <select>
+                <option> 1 Adult </option>
+                <option> 2 Adults </option>
+                <option> 3 Adults </option>
+              </select>
+            </label>
+            
+            <label for="child">
+              <h5> Child <br>
+                <select>
+                  <option> 0 Child </option>
+                  <option> 1 Child </option>
+                  <option> 2 Children </option>
+                  <option> 3 Children </option>
+                </select></h5>
+            </label>
+            
+            <label>
+              <a href="#">
+                <div class="bookNow sm-font">
+                  Check Availability
+                </div>
+              </a>
+            </label>
+        </div>
+        </form>
+        </div>
+      </section>
+      <!--section-2 Check availability end-->
+
+      <!--section-3 Rooms start-->
+      <section class="rooms myCenter">
+        <div class="roomContainer">
+          <div class="roomHeader">
+            <div class="roomTitle">
+              <p class="myFont myWhiteText myShadow">Our Rooms</p>
+            </div>
+            <div class="controlsContainer">
+              <span id="roomLeft"><i class="fas fa-arrow-circle-left"
+                  style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
+              <span id="roomRight"><i class="fas fa-arrow-circle-right"
+                  style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
+            </div>
+          </div>
+          <div class="roomBody">
+            <div class="viewAllRooms">
+              <a href="#" class="sm-font"> View all rooms >></a>
+            </div>
+            <div class="roomMain">
+              <div class="roomImg">
+                <img src="assets/pics/room1.jpg">
+              </div>
+              <div class="roomDetail">
+                <div>
+                  <p class="sm-font">COZY ROOM APARTMENT</p>
+                </div>
+                <div class="roomDetailBody myCenter">
+                  <a href="#"><i class="fas fa-bed" style="font-size:30px;"></i>
+                    <p class="xs-font">2-BEDROOMS</p>
+                  </a>
+                  <a href="#"><i class="fas fa-users" style="font-size:30px;"></i>
+                    <p class="xs-font">4-PERSONS</p>
+                  </a>
+                  <a href="#"><i class="fas fa-eye" style="font-size:30px;"></i>
+                    <p class="xs-font">SEA VIEW</p>
+                  </a>
+                  <a href="#"><i class="fas fa-home" style="font-size:30px;"></i>
+                    <p class="xs-font">400 Sqf</p>
+                  </a>
+                </div>
+                <div class="roomFooter">
+                  <div class="bookNow roomFooterCol1">
+                    <a href="#" class=" myWhiteText sm-font " style="line-height: 5px; letter-spacing: 1.2px;">Check
+                      Details</a>
+                  </div>
+                  <div class="roomFooterCol2">
+                    <span class="xs-font">Start From: </span>
+                    <span class="myBoldWords">$30.00/Night</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--section-3 Rooms end-->
+
+      <!--section-4 facility and amenitiesms start-->
+      <section class="sec4Container">
+        <div class="opacityLayer"></div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/food4.jpg">
+            <p class="myBoldWords">FREE BREAKFAST</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/restaurant2.jpg">
+            <p class="myBoldWords">NIGHTLIFE</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/food3.jpg">
+            <p class="myBoldWords">RESTAURANT</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/hotel5.jpg">
+            <p class="myBoldWords">ATTRACTIONS</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/hotel3.jpg">
+            <p class="myBoldWords">ENVIROMENT</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+        <div class="sec4cards myCenter">
+          <a href="#">
+            <img src="assets/pics/hotel2.jpg">
+            <p class="myBoldWords">CONVENTION</p>
+            <p class="xs-font" style="line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aperiam placeat fugit doloribus porro! Sunt commodi quae laboriosam beatae? Quos, exercitationem.</p>
+          </a>
+        </div>
+      </section>
+      <!--section-4 facility and amenitiesms end-->
+
+      <!--section-5 Gallery start-->
+      <section class=" myCenter" id="gallery">
+        <h1 class=" myHeader "> Gallery </h1>
+      </section>
+      <section class=" sliderContainer ">
+        <div class=" arrow arrowLeft "></div>
+        <div class=" arrow arrowRight "></div>
+        <div class=" slider slider1 "></div>
+        <div class=" slider slider2 "></div>
+        <div class=" slider slider3 "></div>
+        <div class=" slider slider4 "></div>
+        <div class=" slider slider5 "></div>
+        <div class=" slider slider6 "></div>
+        <div class=" slider slider7 "></div>
+        <div class=" slider slider8 "></div>
+      </section>
+      <!--section-5 Gallery end-->
+
+      <!--section-6 Footer start-->
+      <footer class="myWhiteText">
+        <div class="footerRow1">
+          <div class="footerRow1Col1">
+            <p class="myBoldWords">BOOK NOW!</p><br>
+            <p style="margin-bottom: 8px;"><i class="fas fa-phone" style="font-size:15px;color:rgb(71, 180, 216)"> <a
+                  href="tel:+1800-123456">&nbsp;&nbsp;+1800-123456</a></i></p>
+            <p><i class="fas fa-envelope-open-text" style="font-size:15px;color:rgb(71, 180, 216)"><a
+                  href="mailto:ToePwar@thebesthotel.com">&nbsp;&nbsp;ToePwar@thebesthotel.com</a></i>
+            </p>
+            <br>
+            <div class="footerSocialMedia">
+              <a href="#"><i class="fa fa-facebook-square" style="font-size:35px; color:white;"></i></a>
+              <a href="#"><i class="fa fa-youtube-square" style="font-size:35px;color:white"></i></a>
+              <a href="#"><i class="fa fa-wechat" style="font-size:35px;color:white"></i></a>
+              <a href="#"><i class="fa fa-tumblr-square" style="font-size:35px;color:white"></i></a>
+            </div>
+          </div>
+          <div class="footerRow1Col2">
+            <p class="myBoldWords">RECENT NEWS</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Corrupti, alias!</a></li>
+              <li><a href="#">Cumque fugit eius illo quis.</a></li>
+              <li><a href="#">Nobis veniam assumenda asperiores corrupti.</a></li>
+              <li><a href="#">Lorem adipisicing elit. Beatae, optio?</a></li>
+              <li><a href="#">Adipisicing elit. Quasi, a.</a></li>
+            </ul>
+          </div>
+          <div class="footerRow1Col3">
+            <div>
+              <i class="fas fa-medal">&nbsp; HOTEL MASTER AWARD 2019</i>
+            </div>
+            <div>
+              <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i></i></i></i>
+            </div>
+            <br>
+            <p>
+              <a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet eius dolore tempore
+                aspernatur ut minus autem, repudiandae exercitationem sed molestiae iusto explicabo praesentium, totam
+                quod dignissimos excepturi blanditiis, fugit impedit.</a>
+            </p>
+          </div>
+        </div>
+        <div class="footerRow2">
+          Copyright 2019 All Right Reserved
+        </div>
+      </footer>
+      <!--section-6 Footer end-->
+    </section>
+    <!--section-1 Parallax1 end-->
+  </section>
+
+
+  <!-- My js -->
+  <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
