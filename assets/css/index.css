@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+a:hover,
+nav ul li:hover,
+i:hover,
+.bookNow:hover,
+.footerRow1Col2 ul li:hover{
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: 'Acme', sans-serif;
   src: url(../font/Acme/Acme-Regular.ttf);
@@ -365,7 +373,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881
 }
 
 .slider1 {
-  background-image: url(../pics/hotel1.jpg);
+  background-image: url(../pics/hotel3.jpg);
   height: 100%;
 }
 
@@ -375,7 +383,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881
 }
 
 .slider3 {
-  background-image: url(../pics/hotel3.jpg);
+  background-image: url(../pics/hotel1.jpg);
   height: 100%;
 }
 
@@ -390,7 +398,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881
 }
 
 .slider6 {
-  background-image: url(../pics/restaurant1.jpg);
+  background-image: url(../pics/restaurant3.jpg);
   height: 100%;
 }
 
@@ -491,6 +499,7 @@ footer {
     /* margin-left: 300px; */
     margin-left: 0;
   }
+  
 }
 
 /* Screen size more than 1310px */
