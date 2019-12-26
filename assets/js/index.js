@@ -56,7 +56,7 @@ var parallaxFooter = document.querySelector(".parallax2");
 
 window.addEventListener("scroll", function(){
   parallax[0].style.backgroundPositionY = +window.pageYOffset/2+'px';
-  parallaxFooter.style.backgroundPositionY = +window.pageYOffset/20+'px';
+  parallaxFooter.style.backgroundPositionY = +window.pageYOffset/2+'px';
 });
 
 //burger menu
