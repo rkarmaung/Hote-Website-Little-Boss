@@ -496,6 +496,11 @@ footer {
   nav {
     margin-left: 0px;
   }
+  .btnLogoSideBar {
+    position: absolute;
+    top: 40px;
+    left: 73px;
+  }
 }
 
 /* Screen size more than 1310px */
@@ -524,6 +529,9 @@ footer {
     border-bottom: 0;
     opacity: 0.3;
     transition: 500ms all ease;
+  }
+  .btnLogoSideBar {
+    display: none;
   }
 }
 
@@ -608,9 +616,6 @@ footer {
   .myFont {
     font-size: 20px;
     padding: 0px;
-  }
-  nav{
-    width: 100%;
   }
 }
 

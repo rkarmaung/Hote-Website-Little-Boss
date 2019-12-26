@@ -83,7 +83,21 @@ btnLogo.addEventListener("click", function(){
   }
 });
 
-// var lesserThan1310 = window.matchMedia("(min-width: 1310px)");
-//   if (lesserThan1310.matches){
-//     nav.style.marginLeft = "0";
-//   };
+//u want your nav bar at marginLeft=0 when mediaQuery is more than 1310
+//at the same time, when u get back to mediaQuery less than 1310, u want your btnLogo in-place.
+function myFunction(lessThan1310){
+  if(lessThan1310.matches){
+    nav.style.marginLeft = "-300px";
+    btnLogo.style.opacity = "0.5";
+    btnLogo.style.top = "-80px";
+    btnLogo.style.left = "210px";
+    btnLogo.style.transform = "scale(0.5)";
+    btnLogo.style.marginLeft = "0px";
+    burgerLogoCounter=0;
+  } else {
+    nav.style.marginLeft = "0px";
+  }
+}
+var lessThan1310 = window.matchMedia("(max-width: 1310px)");
+myFunction(lessThan1310);
+lessThan1310.addListener(myFunction)
