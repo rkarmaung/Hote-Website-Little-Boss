@@ -4,11 +4,7 @@
   padding: 0;
 }
 
-a:hover,
-nav ul li:hover,
-i:hover,
-.bookNow:hover,
-.footerRow1Col2 ul li:hover{
+a:hover, nav ul li:hover, i:hover, .bookNow:hover, .footerRow1Col2 ul li:hover {
   transform: scale(1.1);
 }
 
@@ -121,6 +117,12 @@ nav {
   display: grid;
   justify-items: center;
   text-align: center;
+  background-color: #f2f2f2;
+  transition: 500ms all ease;
+}
+
+.burgerLogo:hover {
+  opacity: 1;
 }
 
 nav .logo {
@@ -346,9 +348,11 @@ form label [type=date], form label select {
   /* background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881188118812) 56%); */
 }
+
 .sec4cards a {
   color: white;
 }
+
 .sec4cards img {
   width: 200px;
   border-radius: 50% 10%;
@@ -363,6 +367,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881
   width: 100%;
   height: 600px;
   position: relative;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -441,11 +446,12 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6936881
 /* Section 5 - gallery - end */
 
 /* Section 6 - Footer - start */
+
 footer {
   width: 100%;
 }
 
-.footerRow1{
+.footerRow1 {
   width: 100%;
   background-color: black;
   display: grid;
@@ -454,32 +460,27 @@ footer {
   justify-items: center;
 }
 
-.footerRow1Col1 a,
-.footerRow1Col2 a,
-.footerRow1Col3 a,
-.footerRow2{
+.footerRow1Col1 a, .footerRow1Col2 a, .footerRow1Col3 a, .footerRow2 {
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 2px;
   color: white;
 }
 
-.footerRow1Col1,
-.footerRow1Col2,
-.footerRow1Col3{
+.footerRow1Col1, .footerRow1Col2, .footerRow1Col3 {
   padding: 30px;
 }
 
-.footerSocialMedia a{
+.footerSocialMedia a {
   margin: 5px;
 }
 
-.footerRow1Col2 ul li{
+.footerRow1Col2 ul li {
   border-bottom: 1px solid grey;
   margin-top: 5px;
 }
 
-.footerRow2{
+.footerRow2 {
   width: 100%;
   background-color: black;
   font-size: 10px;
@@ -489,20 +490,44 @@ footer {
 
 /* Section 6 - Footer - end */
 
+/* Screen size more than 1310px */
+
+@media only screen and (min-width: 1310px) {
+  nav {
+    margin-left: 0px;
+  }
+}
+
+/* Screen size more than 1310px */
+
 /* Screen size less than 1310px */
 
 @media only screen and (max-width: 1310px) {
-  nav{
+  nav {
     margin-left: -300px;
   }
   .mainSec {
     /* margin-left: 300px; */
     margin-left: 0;
   }
-  
+  #logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .btnLogo {
+    position: relative;
+    z-index: 99;
+    top: -80px; /* top: 0; */
+    left: 210px;/* left: 210px;left: 250px; */
+    transform: scale(0.5);
+    border-bottom: 0;
+    opacity: 0.3;
+    transition: 500ms all ease;
+  }
 }
 
-/* Screen size more than 1310px */
+/* Screen size less than 1310px */
 
 /* Screen size less than 1010px */
 
@@ -532,16 +557,16 @@ footer {
   .roomFooterCol2 span {
     margin-top: 0px;
   }
-  .rooms{
+  .rooms {
     width: 100%;
   }
-  .roomMain{
+  .roomMain {
     display: block;
   }
-  .roomContainer{
+  .roomContainer {
     width: 60%;
   }
-  .roomImg img{
+  .roomImg img {
     width: 100%;
   }
 }
@@ -551,11 +576,11 @@ footer {
 /* Screen size less than 566px */
 
 @media only screen and (max-width: 566px) {
-  .footerRow1{
+  .footerRow1 {
     grid-gap: 0px;
     justify-items: left;
   }
-  .roomContainer{
+  .roomContainer {
     width: 80%;
   }
 }
@@ -565,24 +590,27 @@ footer {
 /* Screen size less than 566px */
 
 @media only screen and (max-width: 500px) {
-  .rooms{
+  .rooms {
     width: 100%;
     display: block;
   }
-  .roomContainer{
+  .roomContainer {
     padding: 10px;
     width: 100%;
   }
-  .roomDetailBody p{
+  .roomDetailBody p {
     font-size: 8px;
   }
   form {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .myFont{
+  .myFont {
     font-size: 20px;
     padding: 0px;
+  }
+  nav{
+    width: 100%;
   }
 }
 
