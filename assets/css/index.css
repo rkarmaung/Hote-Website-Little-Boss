@@ -225,6 +225,7 @@ form label [type=date], form label select {
 .rooms {
   width: 100%;
   margin: 50px 0;
+  position: relative;
 }
 
 .roomContainer {
@@ -240,10 +241,13 @@ form label [type=date], form label select {
 }
 
 .controlsContainer {
-  display: flex;
+  /* display: flex;
   width: 100%;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
+  position: absolute;
+  top: 5px;
+  right: 13%;
 }
 
 .controlsContainer span {
@@ -263,11 +267,16 @@ form label [type=date], form label select {
   overflow: hidden;
   display: grid;
   grid-template-columns: 350px 6fr;
+  display: none;
 }
 
 .roomMain.roomImg {
   width: 100%;
   overflow: hidden;
+}
+
+.roomMain.roomActive{
+  display: block;
 }
 
 .roomImg img {
@@ -540,10 +549,10 @@ footer {
 /* Screen size less than 1010px */
 
 @media only screen and (max-width: 1010px) {
-  .roomMain {
+  /* .roomMain {
     display: grid;
     grid-template-columns: 1fr;
-  }
+  } */
   #checkAva {
     padding: 20px;
   }
@@ -558,6 +567,9 @@ footer {
 /* Screen size less than 700px */
 
 @media only screen and (max-width: 700px) {
+  .controlsContainer{
+    right: 1%;
+  }
   .roomFooterCol2 {
     display: grid;
     margin-right: 100px;
@@ -568,7 +580,7 @@ footer {
   .rooms {
     width: 100%;
   }
-  .roomMain {
+  /* .roomMain {
     display: block;
   }
   .roomContainer {
@@ -584,6 +596,12 @@ footer {
 /* Screen size less than 566px */
 
 @media only screen and (max-width: 566px) {
+  .controlsContainer{
+    right: 1%;
+  }
+  .roomTitle{
+    width: 300px;
+  }
   .footerRow1 {
     grid-gap: 0px;
     justify-items: left;
@@ -598,6 +616,9 @@ footer {
 /* Screen size less than 566px */
 
 @media only screen and (max-width: 500px) {
+  .controlsContainer{
+    right: 1%;
+  }
   .rooms {
     width: 100%;
     display: block;

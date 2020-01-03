@@ -101,3 +101,31 @@ function myFunction(lessThan1310){
 var lessThan1310 = window.matchMedia("(max-width: 1310px)");
 myFunction(lessThan1310);
 lessThan1310.addListener(myFunction)
+
+//Room section
+var roomLeftBtn = document.querySelector("#roomLeft");
+var roomRightBtn = document.querySelector("#roomRight");
+var typeOfRooms = document.querySelectorAll(".roomMain")
+var index = 0;
+
+roomLeftBtn.addEventListener("click", function(){
+  index--;
+  if(index < 0){
+    index = typeOfRooms.length-1;
+  }
+  for(var i=0; i<typeOfRooms.length; i++){
+    typeOfRooms[i].classList.remove("roomActive");
+  };
+  typeOfRooms[index].classList.add("roomActive");
+});
+
+roomRightBtn.addEventListener("click", function(){
+  index++;
+  if(index == typeOfRooms.length){
+    index = 0;
+  };
+  for(var i=0; i<typeOfRooms.length; i++){
+    typeOfRooms[i].classList.remove("roomActive");
+  };
+  typeOfRooms[index].classList.add("roomActive");
+});

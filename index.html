@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--MyCSS-->
   <link rel="stylesheet" href="assets/css/index.css">
-  <title> Toe Pwar - Hotel test </title>
+  <title> Toe Pwar - Hotel </title>
 </head>
 
 <body>
@@ -66,12 +66,12 @@
               <h5> Check In </h5>
               <input type="date" id="arrivalDate" class="arrivalDate">
             </label>
-            
+
             <label for="checkOut">
               <h5> Check Out </h5>
               <input type="date" id="departureDate" class="departureDate">
             </label>
-            
+
             <label for="adult">
               <h5> Adult </h5>
               <select>
@@ -80,7 +80,7 @@
                 <option> 3 Adults </option>
               </select>
             </label>
-            
+
             <label for="child">
               <h5> Child <br>
                 <select>
@@ -90,7 +90,7 @@
                   <option> 3 Children </option>
                 </select></h5>
             </label>
-            
+
             <label>
               <a href="#">
                 <div class="bookNow sm-font">
@@ -106,25 +106,70 @@
 
       <!--section-3 Rooms start-->
       <section class="rooms myCenter">
+        <div class="controlsContainer">
+          <span id="roomLeft"><i class="fas fa-arrow-circle-left"
+              style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
+          <span id="roomRight"><i class="fas fa-arrow-circle-right"
+              style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
+        </div>
+
         <div class="roomContainer">
           <div class="roomHeader">
             <div class="roomTitle">
               <p class="myFont myWhiteText myShadow">Our Rooms</p>
             </div>
-            <div class="controlsContainer">
+            <!--div class="controlsContainer">
               <span id="roomLeft"><i class="fas fa-arrow-circle-left"
                   style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
               <span id="roomRight"><i class="fas fa-arrow-circle-right"
                   style="font-size:35px; color:rgb(118, 172, 36);"></i></span>
-            </div>
+            </div-->
           </div>
           <div class="roomBody">
             <div class="viewAllRooms">
               <a href="#" class="sm-font"> View all rooms >></a>
             </div>
-            <div class="roomMain">
+
+
+            <div class="roomMain roomActive">
               <div class="roomImg">
                 <img src="assets/pics/room1.jpg">
+              </div>
+              <div class="roomDetail">
+                <div>
+                  <p class="sm-font">COZY ROOM</p>
+                </div>
+                <div class="roomDetailBody myCenter">
+                  <a href="#"><i class="fas fa-bed" style="font-size:30px;"></i>
+                    <p class="xs-font">1-BEDROOM</p>
+                  </a>
+                  <a href="#"><i class="fas fa-users" style="font-size:30px;"></i>
+                    <p class="xs-font">2-PERSONS</p>
+                  </a>
+                  <a href="#"><i class="fas fa-eye" style="font-size:30px;"></i>
+                    <p class="xs-font">BAY VIEW</p>
+                  </a>
+                  <a href="#"><i class="fas fa-home" style="font-size:30px;"></i>
+                    <p class="xs-font">200 Sqf</p>
+                  </a>
+                </div>
+                <div class="roomFooter">
+                  <div class="bookNow roomFooterCol1">
+                    <a href="#" class=" myWhiteText sm-font " style="line-height: 5px; letter-spacing: 1.2px;">Check
+                      Details</a>
+                  </div>
+                  <div class="roomFooterCol2">
+                    <span class="xs-font">Start From: </span>
+                    <span class="myBoldWords">$200.00/Night</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="roomMain">
+              <div class="roomImg">
+                <img src="assets/pics/room2.jpg">
               </div>
               <div class="roomDetail">
                 <div>
@@ -132,13 +177,13 @@
                 </div>
                 <div class="roomDetailBody myCenter">
                   <a href="#"><i class="fas fa-bed" style="font-size:30px;"></i>
-                    <p class="xs-font">2-BEDROOMS</p>
+                    <p class="xs-font">1-BEDROOM</p>
                   </a>
                   <a href="#"><i class="fas fa-users" style="font-size:30px;"></i>
                     <p class="xs-font">4-PERSONS</p>
                   </a>
                   <a href="#"><i class="fas fa-eye" style="font-size:30px;"></i>
-                    <p class="xs-font">SEA VIEW</p>
+                    <p class="xs-font">BAY VIEW</p>
                   </a>
                   <a href="#"><i class="fas fa-home" style="font-size:30px;"></i>
                     <p class="xs-font">400 Sqf</p>
@@ -151,11 +196,84 @@
                   </div>
                   <div class="roomFooterCol2">
                     <span class="xs-font">Start From: </span>
-                    <span class="myBoldWords">$30.00/Night</span>
+                    <span class="myBoldWords">$400.00/Night</span>
                   </div>
                 </div>
               </div>
             </div>
+
+
+            <div class="roomMain">
+              <div class="roomImg">
+                <img src="assets/pics/room3.jpg">
+              </div>
+              <div class="roomDetail">
+                <div>
+                  <p class="sm-font">DELUX ROOM</p>
+                </div>
+                <div class="roomDetailBody myCenter">
+                  <a href="#"><i class="fas fa-bed" style="font-size:30px;"></i>
+                    <p class="xs-font">1-BEDROOM</p>
+                  </a>
+                  <a href="#"><i class="fas fa-users" style="font-size:30px;"></i>
+                    <p class="xs-font">3-PERSONS</p>
+                  </a>
+                  <a href="#"><i class="fas fa-eye" style="font-size:30px;"></i>
+                    <p class="xs-font">CITY VIEW</p>
+                  </a>
+                  <a href="#"><i class="fas fa-home" style="font-size:30px;"></i>
+                    <p class="xs-font">400 Sqf</p>
+                  </a>
+                </div>
+                <div class="roomFooter">
+                  <div class="bookNow roomFooterCol1">
+                    <a href="#" class=" myWhiteText sm-font " style="line-height: 5px; letter-spacing: 1.2px;">Check
+                      Details</a>
+                  </div>
+                  <div class="roomFooterCol2">
+                    <span class="xs-font">Start From: </span>
+                    <span class="myBoldWords">$200.00/Night</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="roomMain">
+              <div class="roomImg">
+                <img src="assets/pics/room4.jpg">
+              </div>
+              <div class="roomDetail">
+                <div>
+                  <p class="sm-font">COZY ROOM</p>
+                </div>
+                <div class="roomDetailBody myCenter">
+                  <a href="#"><i class="fas fa-bed" style="font-size:30px;"></i>
+                    <p class="xs-font">1-BEDROOM</p>
+                  </a>
+                  <a href="#"><i class="fas fa-users" style="font-size:30px;"></i>
+                    <p class="xs-font">2-PERSONS</p>
+                  </a>
+                  <a href="#"><i class="fas fa-eye" style="font-size:30px;"></i>
+                    <p class="xs-font">CITY VIEW</p>
+                  </a>
+                  <a href="#"><i class="fas fa-home" style="font-size:30px;"></i>
+                    <p class="xs-font">300 Sqf</p>
+                  </a>
+                </div>
+                <div class="roomFooter">
+                  <div class="bookNow roomFooterCol1">
+                    <a href="#" class=" myWhiteText sm-font " style="line-height: 5px; letter-spacing: 1.2px;">Check
+                      Details</a>
+                  </div>
+                  <div class="roomFooterCol2">
+                    <span class="xs-font">Start From: </span>
+                    <span class="myBoldWords">$300.00/Night</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
@@ -267,7 +385,8 @@
               <i class="fas fa-medal">&nbsp; HOTEL MASTER AWARD 2019</i>
             </div>
             <div>
-              <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star-half-alt"></i></i></i></i></i>
+              <i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i class="fas fa-star"><i
+                        class="fas fa-star-half-alt"></i></i></i></i></i>
             </div>
             <br>
             <p>
