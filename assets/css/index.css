@@ -520,6 +520,7 @@ footer {
 @media only screen and (max-width: 1310px) {
   nav {
     margin-left: -300px;
+    z-index: 99;
   }
   .mainSec {
     /* margin-left: 300px; */
