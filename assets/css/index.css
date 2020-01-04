@@ -110,6 +110,7 @@ a {
 
 nav {
   position: fixed;
+  z-index: 99;
   width: 300px;
   height: 200vh;
   top: 0;
